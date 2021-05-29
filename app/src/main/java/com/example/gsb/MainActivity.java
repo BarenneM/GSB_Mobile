@@ -21,7 +21,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private EditText login;
     private EditText password;
     private TextView resultatTexte;
-    //public ArrayList<Rapport> rapports;
     private DateTimeFormatter formatter;
     private LocalDate date;
 
@@ -49,19 +48,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void login(EditText login, EditText password){
         resultatTexte.setText(login.getText().toString() + " " + password.getText().toString());
-        //Rapport rapport1 = new Rapport(null, "bilan1", "motif1");
-        //Rapport rapport2 = new Rapport(null, "bilan2", "motif2");
-        //rapports.add(rapport1, rapport2);
-
-        /*
-        formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        date = LocalDate.parse("2018-12-01", formatter);
-        rapports.add(new Rapport(date, "bilan1", "motif1"));
-        rapports.add(new Rapport(date, "bilan2", "motif2"));
-        //rapports = null;
-
-        // On positionne la liste des rapports dans la variable globale
-        singleToneClass singleToneClass = com.example.authentication.singleToneClass.getInstance();
-        singleToneClass.setRapports(rapports);*/
     }
 }
